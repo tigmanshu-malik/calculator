@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class = "main">
+
+        <div class = "screen" style = "background-color: aliceblue; height: 50px;" >
+            <div id = "content"></div>
+        </div>
+
+        <div style = "display: flex; flex-direction: column;">
+
+            <div style = "display: flex">
+
+                <div style = "display: flex; flex-direction: column;">
+
+                    <div >
+                        <button onclick="collect(9)">9</button>
+                        <button onclick="collect(8)">8</button>
+                        <button onclick="collect(7)">7</button>
+                    </div>
+
+                    <div>
+                        <button onclick="collect(6)">6</button>
+                        <button onclick="collect(5)">5</button>
+                        <button onclick="collect(4)">4</button>
+                    </div>
+
+                    <div>
+                        <button onclick="collect(3)">3</button>
+                        <button onclick="collect(2)">2</button>
+                        <button onclick="collect(1)">1</button>
+                    </div>
+
+                </div>
+
+                <div style = "display: flex; flex-direction: column;">
+
+                    <button onclick="setOperator('+')">+</button>
+                <button onclick="setOperator('-')">-</button>
+                <button onclick="setOperator('/')">/</button>
+                
+                    
+                </div>
+
+            </div>
+
+            <div >
+                
+                <button onclick="reset()">A/C</button>
+                <button onclick="collect(9)">0</button>
+                <button onclick="evalu()">=</button>
+                <button onclick="setOperator('*')">X</button>
+                
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
